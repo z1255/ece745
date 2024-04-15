@@ -19,8 +19,8 @@ class ncsu_component_base extends ncsu_object;
   endfunction
 
   virtual function void build();
-     if (enable_transaction_viewing) begin
-       transaction_viewing_stream = $create_transaction_stream({"\\",get_full_name(),".txn_stream"});
-     end
+    //  if (enable_transaction_viewing) begin
+    //    transaction_viewing_stream = $create_transaction_stream({"\\",get_full_name(),".txn_stream"});
+    //  end
   endfunction
 endclass
